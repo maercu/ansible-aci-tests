@@ -1,0 +1,8 @@
+- name: ACI Tests
+  gather_facts: no
+  hosts: lh-dmz1-pod3-sim-v32
+
+  tasks:
+    - name: test module
+      include_role: 
+        name: aci_l3out_interface
